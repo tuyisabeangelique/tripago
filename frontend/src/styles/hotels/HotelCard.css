@@ -1,0 +1,84 @@
+.hotel-card {
+  display: flex;
+  background: var(--white);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 2px 5px var(--dark-grey);
+  align-items: flex-start;
+}
+
+.hotel-map {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.hotel-info {
+  flex: 1;
+  padding: 0 15px;
+}
+
+.hotel-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.hotel-location {
+  font-size: 12px;
+  color: gray;
+}
+
+.star-rating {
+  color: #ffcc00;
+  /* color: var(--dark-grey); */ 
+  font-size: 14px;
+}
+
+.hotel-reviews {
+  font-size: 12px;
+  color:  var(--dark-grey);
+}
+
+.price-details p {
+  font-size: 14px;
+  margin: 4px 0;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.hotel-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.best-price {
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+
+.free-breakfast {
+  font-size: 12px;
+  color: var(--primary-color);
+}
+
+/* .view-deal {
+  background: var(--secondary-color);
+  color: var(--white);
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.view-deal:hover {
+  background: #218838;
+} */
+
+/* View Deal Button Has .modal-button styling from Style Guide */
+

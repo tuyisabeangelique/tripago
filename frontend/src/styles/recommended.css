@@ -1,0 +1,15 @@
+.card_positions {
+    margin-left: 15rem; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 2rem;
+}
+
+@media (max-width: 480px) {
+    .card_positions {
+      margin: 0; /* Remove margin on very small screens */
+      width: 100%; /* Ensure full width */
+      padding: 2rem;
+    }
+  }

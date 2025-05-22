@@ -1,0 +1,178 @@
+.sidebar {
+  position: fixed;
+  width: 185px;
+  height: 100%;
+  background-color: #ffffff;
+  border-right: 1px solid #e0e0e0;
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  top: 50px;
+  left: 0px;
+  z-index: 100;
+}
+
+.sidebar-closed {
+  transform: translateX(-100%);
+}
+
+.sidebar-header {
+  padding: 0 20px 20px;
+  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 20px;
+}
+
+.sidebar-header p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+}
+
+.username {
+  color: #6c5ce7;
+  font-weight: 800;
+}
+
+.sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  font-weight: normal;
+  background: none;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: none;
+  text-align: left;
+  color: #555;
+  font-size: 20px;
+  transition: all 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: #f8f8f8;
+  color: #6c5ce7;
+}
+
+.sidebar-item-active {
+  color: #6c5ce7;
+}
+
+.sidebar-icon {
+  margin-right: 12px;
+}
+
+.sidebar-hamburger-btn {
+  display: none;
+}
+
+/* Applies only when .profile-page is present */
+@media (max-width: 800px) {
+  .profile-page .sidebar {
+    display: none;
+  }
+
+  .profile-page .sidebar.open {
+    display: block;
+    position: absolute;
+    top: 30px; 
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding: 5rem 1rem;
+    margin-top: 26.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .profile-page .sidebar-hamburger-btn {
+    display: block;
+  }
+
+
+  .profile-page .sidebar-hamburger-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1003;
+    background-color: white;
+    border: 2px solid var(--black);
+    font-size: 26px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .profile-page .sidebar-hamburger-btn:hover {
+    border: 2px solid var(--black);
+    background-color: var(--medium-grey);
+
+  }
+
+  .profile-page .hamburger-icon-bars {
+    color: var(--dark-grey);
+  }
+
+  .profile-page .hamburger-icon-times {
+    color: var(--primary-color);
+  }
+
+}
+
+
+@media (max-width: 480px) {
+  .sidebar {
+    display: none;
+  }
+
+  .sidebar.open {
+    display: block;
+    position: absolute;
+    top: 45px; 
+    left: 0;
+    background-color: #fff;
+    z-index: 1;
+    padding: 5rem 1rem;
+    margin-top: 26.5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .sidebar-hamburger-btn {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1003;
+    background-color: white;
+    border: 2px solid var(--black);
+    font-size: 26px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .sidebar-hamburger-btn:hover {
+    border: 2px solid var(--black);
+    background-color: var(--medium-grey);
+
+  }
+
+  .hamburger-icon-bars {
+    color: var(--dark-grey);
+  }
+
+  .hamburger-icon-times {
+    color: var(--primary-color);
+  }
+
+}

@@ -1,0 +1,59 @@
+.help-tooltip-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.help-icon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tooltip-container {
+  display: flex;
+  gap: 4px;
+}
+
+.browse-trips_tooltip-container {
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tooltip-box {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 300px;
+  background: #fff;
+  border: none;
+  padding: 15px;
+  font-size: 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px #0000001a;
+  z-index: 999;
+  color: var(--secondary-text);
+  line-height: 1.1;
+}
+
+.tooltip-purple {
+  color: var(--primary-color) !important;
+}
+
+.tooltip-box ul {
+  list-style-type: disc;
+  list-style-position: inside; 
+  padding-left: 0;
+  margin: 8px 0;
+}
+
+.tooltip-box li {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 480px)  {
+  .tooltip-box {
+    width: 150px;
+  }
+}

@@ -1,0 +1,115 @@
+.request-modal-content {
+  width: 350px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.request-modal-content li {
+  color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.close-btn {
+  float: right;
+  border: none;
+  background: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.requests-list {
+  list-style: none;
+  padding: 0;
+}
+
+.requests-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.approve-btn, .delete-btn {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.approve-btn {
+  background-color: #52DDA2;
+  color: white;
+}
+
+.delete-btn {
+  background-color: #ff6b6b;
+  color: white;
+}
+
+/* Sent Requests Status */
+.status {
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.status.pending {
+  color: var(--secondary-text);
+}
+
+.status.accepted {
+  color: #52DDA2;
+}
+
+.status.rejected {
+  color: #ff6b6b;
+}
+
+.clickable-name, .friends-list li .clickable-name {
+  cursor: pointer;
+  color: var(--dark-grey);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/*For the alert message*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1003;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh;  
+  overflow-y: auto;  
+  text-align: center;
+  position: relative;
+}
+
+.send-req-modal-content {
+  color: var(--primary-color);
+  font-weight: 600;
+  width: 300px
+}
+

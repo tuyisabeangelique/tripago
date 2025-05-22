@@ -1,0 +1,170 @@
+/* LOGIN */
+
+.login-container {
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+  text-align: center;
+}
+
+.login-container span {
+  color: var(--primary-color);
+}
+
+.login-container h2 {
+  font-size: 1.6rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid var(--white);
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.login_signup-button {
+  background-color: var(-secondary-color);
+  color: var(--white);
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.login_signup-button:hover {
+  background-color: var(--lightest-grey);
+  transform: scale(1.05);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color)
+}
+
+.login_signup-btn:hover {
+  color: var(--primary-color);
+}
+
+p {
+  margin-top: 10px;
+}
+
+p a {
+  text-decoration: none;
+  color: #333;
+}
+
+.link-button {
+  background: none;
+  border: none;
+  color: var(--secondary-text);
+  font-size: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  padding: 0;
+  box-shadow: none;
+  transition: ease-in-out 0.3s;
+  width: 100%;
+}
+
+.link-button:hover {
+  text-decoration: none;
+  opacity: 0.9;
+  background: none;
+  color: var(--primary-color);
+}
+
+
+/* SIGNUP */
+
+.signup-message {
+  color: var(--dark-grey);
+  font-size: 30px;
+  display: block;
+  width: 100%
+}
+
+.password-tooltip {
+  background: #f5f5f5;
+  padding: 7px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  color: #333;
+  display: block;
+  width: 80%;
+  height: 60%;
+  opacity: .5;
+  align-self: center;
+  line-height: .2;
+}
+
+.password-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .password-container:hover .password-tooltip {
+  display: block;
+} */
+
+.create-account-button {
+  margin-top: 5px;
+}
+
+/* RESET PASSWORD */
+
+.email-input-box {
+  margin-bottom: 10px;
+}
+
+/* MEDIA QUERIES FOR IPHONE 12PRO DIMENSIONS 390px x 844px  */
+
+@media (max-width: 480px) {
+  /* Adjust container */
+  .login-container {
+    width: 95%;
+    max-width: 320px;
+    margin-top: 200px; /* Push down from navbar */
+  }
+
+  .login-container p {
+    margin-top: 5px;
+    margin-bottom: 0;
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem; /* Slightly smaller */
+  }
+
+  /* Make input fields smaller */
+  input {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  /* Make buttons smaller */
+  .login_signup-button {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 20px;
+  }
+
+  /* Center forgot password link */
+  .link-button {
+    font-size: 0.9rem;
+  }
+
+  .signup-container {
+    margin-top: 150px;
+  }
+
+  .password-tooltip {
+    line-height: .6;
+  }
+
+}

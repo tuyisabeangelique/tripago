@@ -1,0 +1,244 @@
+.message-thread-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--white);
+  height: auto;
+  min-height: 100vh;
+  margin-top: 50px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.message-thread-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  z-index: -1;
+}
+
+.message-thread-header {
+  position: relative;
+  top: 0;
+  z-index: 20;
+  background-color: var(--gradient-bg);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--medium-grey);
+}
+
+.dm-back-button {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: none;
+  font-size: 24px;
+}
+
+.dm-back-button:hover {
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 10px;
+  box-shadow: none;
+}
+
+.thread-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1.5px solid var(--secondary-color);
+}
+
+.thread-name {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+  transition: all 0.5s ease-in-out;
+}
+
+.thread-name:hover {
+  color: var(--primary-color);
+}
+
+.message-bubble-list {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--medium-grey);
+}
+
+.message-bubble {
+  max-width: 75%;
+  padding: 12px 16px;
+  border-radius: 16px;
+  display: inline-block;
+  position: relative;
+  word-wrap: break-word;
+}
+
+.from-me {
+  background-color: var(--primary-color);
+  color: var(--white);
+  align-self: flex-end;
+  border-bottom-right-radius: 0;
+}
+
+.from-them {
+  background-color: var(--white);
+  color: var(--dark-grey);
+  align-self: flex-start;
+  border-bottom-left-radius: 0;
+  border: 1px solid var(--medium-grey);
+}
+
+.bubble-text {
+  font-size: 14px;
+}
+
+.bubble-time {
+  font-size: 11px;
+  color: var(--secondary-text);
+  margin-top: 4px;
+  text-align: right;
+}
+
+.message-input-container {
+  position: sticky;
+  bottom: 0;
+  z-index: 20;
+  background-color: var(--medium-grey);
+  display: flex;
+  gap: 10px;
+  padding: 16px 24px;
+}
+
+.message-input {
+  flex: 1;
+  padding: 10px 15px;
+  border: 1px solid var(--medium-grey);
+  border-radius: 10px;
+  font-size: 14px;
+}
+
+.send-button {
+  padding: 0 20px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.thread-empty-state {
+  margin: auto;
+  text-align: center;
+  color: var(--secondary-text);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.thread-empty-image {
+  max-width: 180px;
+  height: auto;
+  margin-bottom: 20px;
+  opacity: 0.95;
+}
+
+.thread-empty-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--black);
+}
+
+.thread-empty-sub {
+  font-size: 14px;
+}
+
+.toggle-view-button {
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 13px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  position: absolute;
+  top: 50px;
+  left: 250px;
+  z-index: 30;
+}
+
+.toggle-view-button:hover {
+  margin-top: 10px;
+  margin-left: auto;
+  padding: 6px 12px;
+  font-size: 13px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  background-color: #674dd8;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+  .message-thread-container {
+    padding: 16px;
+    height: 100dvh;
+  }
+
+  .thread-avatar {
+    width: 40px;
+    height: 40px;
+  }
+
+  .thread-name {
+    font-size: 18px;
+  }
+
+  .message-bubble {
+    font-size: 13px;
+    padding: 10px 14px;
+  }
+
+  .bubble-text {
+    font-size: 13px;
+  }
+
+  .message-input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+
+  .send-button {
+    padding: 0 16px;
+    font-size: 13px;
+  }
+
+
+}

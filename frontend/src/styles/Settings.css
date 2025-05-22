@@ -1,0 +1,533 @@
+.settings-container {
+  display: flex;
+  justify-content: center; /* Centers the settings panel */
+  width: 900px; /* Fixed width */
+  margin-left: 0; /* Centers the container */
+  min-height: 100vh;
+  background: var(--white);
+  padding: 80px 800px 20px 800px;
+}
+
+.settings-left {
+  width: 30%;
+  padding: 40px 20px;
+  background: var(--white);
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-size: 16px;
+  min-height: 100vh;
+}
+
+.settings-left h3 {
+  font-size: 16px;
+  color: var(--dark-grey);
+  margin-top: 20px;
+}
+
+.settings-left button {
+  background: none;
+  border: none;
+  color: var(--dark-grey);
+  font-size: 16px;
+  text-align: left;
+  cursor: pointer;
+  padding: 10px 0;
+  transition: color 0.2s ease-in-out;
+  padding: 12px 15px;
+}
+
+.settings-left button:hover,
+.settings-left .selected {
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.settings-left .selected {
+  color: var(--primary-color);
+}
+
+.settings-right {
+  padding: 40px;
+  background: var(--white);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  min-height: 100vh;
+  width: 70%;
+}
+
+/* Inputs */
+.settings-right input,
+.settings-right textarea,
+.settings-right select {
+  border: 2px solid var(--lightest-grey);
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s ease-in-out;
+  margin: 0;
+  width: 70%;
+}
+
+.settings-left .return-home-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.settings-left .return-home-btn:hover {
+  background-color: white;
+  border: 1px solid var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+/* Buttons */
+.settings-right button {
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1em;
+  width: 75%;
+  height: 2.5em;
+  border-radius: 1em;
+  transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  align-self: center;
+}
+
+.settings-right button:hover {
+  transform: scale(1.05);
+  color: var(--secondary-color);
+  border: 1px solid var(--secondary-color);
+}
+
+.about {
+  height: 200px;
+  font-family: inherit;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.settings-right label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 60px;
+  color: var(--dark-grey);
+}
+
+.settings-right select {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid var(--light-grey);
+  background: var(--white);
+  appearance: none; /* Removes default styles */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.activity-section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  background: var(--lightest-grey);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.activity-section h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: var(--dark-grey);
+}
+
+.activity-section p {
+  font-size: 14px;
+  color: var(--dark-grey);
+}
+
+.terms-of-service__container h3 {
+  color: var(--dark-grey);
+}
+
+.gear-menu {
+  display: none;
+}
+
+.settings-right select {
+  color: var(--black);
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 30px;
+}
+
+.success-message {
+  color: green;
+  margin-bottom: 30px;
+}
+
+/* Delete Account Page Styles */
+.delete-account-section {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.warning-text {
+  color: #dc3545;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.deletion-effects {
+  margin-bottom: 25px;
+  padding-left: 20px;
+  text-align: left;
+}
+
+.deletion-effects li {
+  margin-bottom: 12px;
+  color: #666;
+}
+
+.deletion-effects > li {
+  font-weight: 500;
+  color: #444;
+}
+
+.deletion-effects ul {
+  margin-top: 8px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.deletion-effects ul li {
+  margin-bottom: 6px;
+  font-weight: normal;
+  font-size: 0.95em;
+}
+
+.delete-button {
+  background-color: #dc3545;
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.delete-button:hover {
+  background-color: var(--white);
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.confirmation-dialog {
+  margin-top: 20px;
+}
+
+.password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.confirmation-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.cancel-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.cancel-button:hover {
+  border-color: var(--primary-color) !important;
+  color: var(--primary-color) !important;
+}
+
+.confirm-delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.confirm-delete-button:hover {
+  background-color: var(--white);
+  color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+.confirm-delete-button:disabled {
+  background-color: #dc354580;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: #dc3545;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 980px) {
+  .settings-left.open {
+    display: flex;
+    z-index: 1000;
+    position: fixed;
+    left: 0;
+    top: 68px;
+    overflow-y: auto;
+    height: calc(100vh - 68px);
+    min-height: 0;
+    padding-top: 0;
+  }
+
+  .settings-right {
+    width: 100%;
+    padding: 50px;
+    /* height: auto; */
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .settings-right input,
+  .settings-right textarea,
+  .settings-right select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .settings-right button {
+    width: 250px;
+    font-size: 16px;
+    height: 3.5em;
+    /* padding: 20px; */
+  }
+
+  .settings-right input,
+  .settings-right textarea,
+  .settings-right select {
+    width: 200px;
+  }
+
+  .activity-section {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 70%;
+    margin-left: 45px;
+  }
+
+  .display-mode__container {
+    margin-left: 45px;
+  }
+
+  .terms-of-service__container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 120%;
+    background: var(--white);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terms-of-service__container p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .terms-btn {
+    margin-bottom: 100px;
+  }
+
+  .gear-menu {
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 100px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    box-shadow: none;
+    color: var(--dark-grey);
+  }
+
+  .gear-menu:hover {
+    color: var(--primary-color);
+    box-shadow: none;
+    border: none;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  /* Make settings container full-width on mobile */
+  .settings-container {
+    flex-direction: column;
+    width: fit-content;
+    padding: 20px; /* Reduce excessive padding */
+  }
+
+  /* Hide left sidebar and add a hamburger menu */
+  .settings-left {
+    display: none; /* Hide sidebar */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100vh;
+    background: var(--white);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .gear-menu {
+    position: absolute;
+    display: block;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 1100;
+    box-shadow: none;
+    color: var(--dark-grey);
+  }
+
+  .gear-menu:hover {
+    color: var(--primary-color);
+    box-shadow: none;
+    border: none;
+  }
+
+  .settings-left.open {
+    display: flex;
+  }
+
+  .settings-right {
+    width: fit-content;
+    padding: 50px;
+    /* height: auto; */
+    margin-top: 50px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .settings-right input,
+  .settings-right textarea,
+  .settings-right select {
+    width: 100%; /* Full width */
+    padding: 10px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .settings-right button {
+    width: 250px;
+    font-size: 16px;
+    height: 3.5em;
+    /* padding: 20px; */
+  }
+
+  .settings-right input,
+  .settings-right textarea,
+  .settings-right select {
+    width: 200px;
+  }
+
+  .activity-section {
+    margin-bottom: 15px;
+    padding: 5px;
+    width: 70%;
+    margin-left: 45px;
+  }
+
+  .display-mode__container {
+    margin-left: 45px;
+  }
+
+  .terms-of-service__container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 120%;
+    background: var(--white);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .terms-of-service__container p {
+    width: 80%;
+    text-align: center;
+  }
+
+  .terms-btn {
+    margin-bottom: 100px;
+  }
+
+  .confirmation-buttons {
+    flex-direction: column;
+  }
+}
+
+
+
+/*For alerts*/
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1003;
+}
+
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 600px;
+  max-width: 90%;
+  max-height: 80vh;  
+  overflow-y: auto;  
+  text-align: center;
+  position: relative;
+}
+
+.send-req-modal-content {
+  color: var(--primary-color);
+  font-weight: 600;
+  width: 300px
+}
+

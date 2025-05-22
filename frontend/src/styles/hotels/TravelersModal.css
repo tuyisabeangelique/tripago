@@ -1,0 +1,70 @@
+/* Modal Row (Rooms, Adults, Children) */
+.modal-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  color: var(--dark-grey);
+}
+
+/* Container for Icons and Labels */
+.modal-label {
+  display: flex;
+  align-items: center;
+  width: 100px; /* Ensures uniform width */
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Ensures Buttons Are in a Flex Container */
+.modal-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Buttons */
+.modal-btn {
+  background: var(--lightest-grey);
+  border: none;
+  padding: 8px 12px; /* Ensures consistent size */
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--dark-grey);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 35px; /* Ensures all buttons are the same width */
+  min-height: 35px; /* Ensures all buttons are the same height */
+}
+
+.modal-btn:hover {
+  background: var(--medium-grey);
+  color: var(--dark-grey);
+}
+
+/* Ensures Proper Positioning for Reset/Save */
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; /* Aligns buttons to the right */
+  gap: 10px; /* Adds space between buttons */
+  padding-top: 15px;
+}
+
+/* Reset Button */
+.reset-btn {
+  background: var(--white);
+  border: none;
+  box-shadow: none;
+  color: var(--dark-grey);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.reset-btn:hover {
+  color: var(--black);
+  background: var(--white);
+}

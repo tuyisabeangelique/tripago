@@ -1,0 +1,141 @@
+.dashboard-container {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: var(--white);
+  height: auto;
+  min-height: 100vh;
+  margin-top: 100px;
+  padding-top: 20px;
+}
+
+.dashboard-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white); 
+  z-index: -1;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+
+.profile-content {
+  flex: 1;
+  /* padding: 30px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  /* margin-top: 0px; */
+}
+
+
+.travel-dates-modal h3 span {
+  color: var(--primary-color);
+}
+
+.travel-dates-modal label {
+  color: var(--dark-grey)
+}
+
+.travel-dates-modal p {
+  color: var(--secondary-text);
+  font-size: 11px;
+}
+
+.trip-collaborators {
+  margin-top: 1rem;
+  position: absolute;
+  left: 1100px;
+}
+
+.add-collab-btn {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.4rem 0.75rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out
+}
+
+.add-collab-btn:hover {
+  background-color: #5531e6;
+  color: white;
+}
+
+.collab-input-container {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tab-pane-container {
+  margin-top: 0px; /* RESET ANY OVERRIDES */
+  padding-top: 20px;
+}
+
+.trip-details {
+  position: relative;
+}
+
+@media (max-width: 1007px) { 
+  .dashboard-container {
+    margin-top: 100px;
+  }
+
+
+  .start-trip-btn-all-trips {
+    width: 100px;
+    height: 40px;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 800px) and (max-width: 980px) {
+  .dashboard-container {
+    padding-left: 100px;
+  }
+}
+
+@media (max-width: 480px) { 
+  .profile-content{
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-top: 300px;
+  }
+
+  .discussion-header {
+    width: 280px
+  }
+
+  .tab-itinerary {
+    margin-top: 0px;
+    padding-bottom: 50px;
+  }
+  
+  .tab-budgeting {
+    margin-top: 0px;
+    padding-bottom: 50px;
+  }
+  
+  .tab-memories {
+    margin-top: 0px;
+    padding-bottom: 50px;
+  }
+}
